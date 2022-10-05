@@ -16,6 +16,7 @@ This assessment is formative - which means that you get feedback for completing 
 ## Editing markdown
 
 Here demonstrate that you can add headings, tables, bullet lists, check lists, images, hyperlinks and emojis.
+
 -----------------------------------------------
 
 # this is a heading
@@ -50,8 +51,9 @@ Console.WriteLine("THIS IS CODE");
 ## Understanding compilation
 
 Here demonstrate your understanding of compilation.
+
 -----------------------------------------------
-I used a basic "Hello World" profram and saved the .cs file on my C drive. I then navigated to the file location in the Developer Command Prompt and used the csc command to compile it into an .exe file.
+I used a basic "Hello World" program and saved the .cs file on my C drive. I then navigated to the file location in the Developer Command Prompt and used the csc command to compile it into an .exe file.
 ```cs
 using System;
 namespace myNamespace
