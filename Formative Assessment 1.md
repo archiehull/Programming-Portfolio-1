@@ -53,6 +53,8 @@ Console.WriteLine("THIS IS CODE");
 Here demonstrate your understanding of compilation.
 
 -----------------------------------------------
+*As my personal computer is running MacOS, I will run the following exercise of a VM running windows.*
+
 I used a basic "Hello World" program and saved the .cs file on my C drive. I then navigated to the file location in the Developer Command Prompt and used the csc command to compile it into an .exe file.
 ```cs
 using System;
