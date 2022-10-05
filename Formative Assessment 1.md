@@ -16,6 +16,36 @@ This assessment is formative - which means that you get feedback for completing 
 ## Editing markdown
 
 Here demonstrate that you can add headings, tables, bullet lists, check lists, images, hyperlinks and emojis.
+-----------------------------------------------
+
+# this is a heading
+- this
+- is
+- a
+- bulletlist
+## this is a smaller heading
+- [ ] this
+- [x] is
+- [ ] a
+- [x] checklist
+### this is a smaller heading
+
+|this|is|a|table|
+|---|---|---|---|
+|↘️| | |↙️| 
+| | these are| emojis| |  
+|↗️| | |↖️|
+
+```cs
+Console.WriteLine("THIS IS CODE");
+```
+
+
+
+![creps](https://avatars.githubusercontent.com/u/76594364?v=4)
+
+
+[check out my soundcloud with this hyperlink](https://soundcloud.com/archiehull)
 
 ## Understanding compilation
 
