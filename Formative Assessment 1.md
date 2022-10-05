@@ -50,6 +50,25 @@ Console.WriteLine("THIS IS CODE");
 ## Understanding compilation
 
 Here demonstrate your understanding of compilation.
+-----------------------------------------------
+I used a basic "Hello World" profram and saved the .cs file on my C drive. I then navigated to the file location in the Developer Command Prompt and used the csc command to compile it into an .exe file.
+```cs
+using System;
+namespace myNamespace
+{
+    class myClass
+    {
+          static void Main()
+          {
+              Console.WriteLine("Hello, World");
+          }
+    }
+}
+```
+![cmd](images/cmd.png)
+![folder](images/folder.png)
+
+the .cs file can be found [here](F1/helloworld.cs) , and the .exe file can be found [here](F1/helloworld.exe)
 
 ## Understanding source control
 
