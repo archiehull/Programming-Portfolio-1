@@ -78,11 +78,43 @@ the .cs file can be found [here](F1/helloworld.cs) , and the .exe file can be fo
 
 Here demonstrate your understanding of source control.
 
+-----------------------------------------------
+
+
+Here is a "Hello World" program in a VS project called C_testing.
+![VS](images/VS.png)
+I have zipped the project and added it to my local git repo.
+![folder2](images/folder2.png)
+I then use the Git Desktop App to add it and commit it along with a commitment note and description
+![git](images/git.png)
+I then push the commitment from the app, which can be seen in my repo in the online area.
+![git2](images/git2.png)
+
+
+The same process can be done in the command line with the following commands, however - I tend to use the desktop app for convenience.
+
+```sh
+git add .
+```
+
+```sh
+git commit -a
+```
+
+```
+git push
+```
+
 ## Executing a test plan
+
+-----------------------------------------------
+Running the code from C_testing
+![code](images/code.png)
 
 |Test Number|Input|Expected Output|Actual Output|Pass/Fail|
 |---|---|---|---|---|
-| | | | | :x::white_check_mark:|
+| 1| n/a| "Hello World"| "Hello World" |:white_check_mark:|
+
 
 ## Semantics
 
@@ -93,20 +125,26 @@ Complete this table of semantics with your understanding of what these terms mea
 
 | Word | Synonyms | Meaning |
 |---|---|---|
-|Source Control| | |
-|Commit| | |
-|Push| | |
-|Compile| | |
-|Compile Time| | |
-|Syntax Error| | |
-|Run Time| | |
-|Run Time Error| | |
-|Algorithmic Error|Bug :beetle:| |
+|Source Control|version control | being in control of the changes and iterations made to code |
+|Commit|package together| to collect the changes made to a source and prepare for output |
+|Push|send package to be intergrated into a rep|to send the local changes made to the repo |
+|Compile|translate|convert a piece of code to another language or environment |
+|Compile Time|translation time| time taken for a program to compile |
+|Syntax Error|code error|an error in the application of the code |
+|Run Time|execution section|the sub area where a program runs |
+|Run Time Error|execution error| an error in the execution of the code (i.e. running out of memory) |
+|Algorithmic Error|process error| an error in which the logical process used gives the incorrect output |
 
 ## Reflection
 In this section you should reflect upon what you have learnt. This is an important part of the learning process.
-- What have you learnt from these exercises?
-- How can you apply what you have learnt?
+
+-----------------------------------------------
+#### What have you learnt from these exercises?
+How to use markdown and interact with git
+
+#### How can you apply what you have learnt?
+I will be using git throughout my course so this has given me a good foundation for moving forward with my work.
+
 
 ## Requesting Feedback
 
