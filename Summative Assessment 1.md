@@ -17,9 +17,21 @@ This assessment is summative - which means that you get feedback for completing 
 
 Here demonstrate that you understand the structure of a visual studio project, and the different files it uses.
 
+--------------------------
+
+The structure of a VS project begins by selecting a template (if desired). The template will determine which programming language(s) will be used within the project and which platforms the program is intended to run on. Following template selection, the file cam be named and the framework type can be selected (typically .NET 5 or 6) - then the coding can begin.
+A folder will be created containing a *'.sln'* file, and a subfolder containing the initial project name which, depending on what language you're coding in, will be a *'.##proj'* file (i.e. *'.csproj'*, *'.vcproj'*, etc.) - and a *'.##'* (i.e. *'.cs'*) .
+
+The .proj file cointains intructions on how to compile the code contained in the .## file.
+The .sln file contains plaintext which groups all the project files within the folder together.
+
 ## Declaring a variable
 
 Here demonstrate your understanding of variables, types and assignments.
+
+--------------------------
+
+
 
 ## Casting a value
 
