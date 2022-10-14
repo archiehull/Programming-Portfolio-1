@@ -30,16 +30,47 @@ The .sln file contains plaintext which groups all the project files within the f
 Here demonstrate your understanding of variables, types and assignments.
 
 --------------------------
+In the code below - the prefixes *'int'* and *'float'* are used to create variables and assign them to the required data type.
+```cs
+int integer = 3;
+float taolf = 7.5f;
 
+Console.WriteLine(integer);
+Console.WriteLine(taolf);
+```
 
 
 ## Casting a value
 
 Here demonstrate that you understand how to cast one type to another, and when and why you should do that.
 
+--------------------------
+The code below is an example of implicit casting, which is the casting of a smaller size type to a larger size type - which can be done automatically. Explicit casting occurs when casting from larger to smaller and must be done through the use of manual conversion.
+```cs
+int integer = 3;
+float taolf = integer;
+
+Console.WriteLine(integer);
+Console.WriteLine(taolf);
+```
+
+
 ## Parsing a string
 
 Here demonstrate that you understand how to parse a string to another type, and when and why you should do that.
+
+--------------------------
+The code below shows an example of Parsing, which is a method used to convert data types. It is commonanly used in a similar fasion to this example, where it's converting a string, entered by the user, to an integer, in order to make the value enter mathmatically usable and have it assigned to a variable.
+
+```cs
+Console.WriteLine("Enter a number :");
+
+int number = int.Parse(Console.ReadLine());
+
+int newnumber = number * 2;
+
+Console.WriteLine("Your number * 2 is : " + newnumber);
+```
 
 ## Requesting Feedback
 
@@ -56,17 +87,20 @@ Complete this table of semantics with your understanding of what these terms mea
 
 | Word | Synonyms | Meaning |
 |---|---|---|
-|Variable| | |
-|Identifier| Name | |
-|Type| | |
-|Cast| | |
-|Parse| | |
-|Integer| | |
-|Floating Point|Real| |
-|String| | |
+|Variable|container|a location in which data is stored|
+|Identifier| Name | the user-defined name of a program element. It can be a namespace, class, method, variable or interface.|
+|Type|group| how to data can be used and interpreated|
+|Cast|convert|changing from one data type to another |
+|Parse|change|converting from a string to another data type|
+|Integer|digit|whole number |
+|Floating Point|Real| decimal number|
+|String|word|a series of connected characters |
 
 ## Reflection
 In this section you should reflect upon what you have learnt. This is an important part of the learning process.
 - What have you learnt from these exercises?
+how to use conversion in c#
 - How can you apply what you have learnt?
+when using data types in other programs, i will have a better understanding
 - What new features of C# are you now able to use?
+casting and parsing
