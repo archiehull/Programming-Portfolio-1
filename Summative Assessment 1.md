@@ -99,8 +99,11 @@ Complete this table of semantics with your understanding of what these terms mea
 ## Reflection
 In this section you should reflect upon what you have learnt. This is an important part of the learning process.
 - What have you learnt from these exercises?
+
 how to use conversion in c#
 - How can you apply what you have learnt?
+
 when using data types in other programs, i will have a better understanding
 - What new features of C# are you now able to use?
+
 casting and parsing
