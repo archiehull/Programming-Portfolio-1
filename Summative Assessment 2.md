@@ -15,6 +15,66 @@ This assessment is summative - which means that you get feedback for completing 
 - [ ] :white_check_mark: Get your work checked off by a feedback engineer
 
 ## Boolean
+Using the "Oldest Sibling" program provided - the use and functionality of Boolean operators can be explored.
+
+The "if" statements at the end of the program are prime examples of how logical operators can be used to return a boolean true or false output, in order to dictate the flow of a program.
+
+The results of a tested truth table can be seen below. with each test utilising different parameters in the if/elif/else statement at the end of the code.
+| Test Number | Input | Output | 
+|---|---|---|
+|1| | "This application will tell us who the oldest of a pair of siblings is." | 
+| | | "First sibling, what is your name?" |
+| | "Mary" | "Hello Mary, How old are you?" |
+| | "20"   | "Second sibling, what is your name?" | 
+| | "Paul" | "Hello Paul, How old are you?" | 
+| | "18"   | "Mary is 2 years older than Paul" | 
+|2| | "This application will tell us who the oldest of a pair of siblings is." |
+| | | "First sibling, what is your name?" | 
+| | "Steve" | "Hello Steve, How old are you?" |
+| | "21"   | "Second sibling, what is your name?" |
+| | "Katie" | "Hello Katie, How old are you?" | 
+| | "25"   | "Katie is 4 years older than Steve" | 
+|3| | "This application will tell us who the oldest of a pair of siblings is." | 
+| | | "First sibling, what is your name?" | 
+| | "Ahmed" | "Hello Ahmed, How old are you?" | 
+| | "23"   | "Second sibling, what is your name?" | 
+| | "Peter" | "Hello Peter, How old are you?" | 
+| | "23"   | "Ahmed and Peter are the same age" | 
+
+```cs
+Console.WriteLine("Welcome to the Oldest Sibling Application.");
+
+Console.WriteLine("This application will tell us who the oldest of a pair of siblings is.");
+
+Console.WriteLine("First sibling, what is your name?");
+
+string name1 = Console.ReadLine();
+
+Console.WriteLine("Hello " + name1 + ", How old are you?");
+
+int age1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Second sibling, what is your name?");
+
+string name2 = Console.ReadLine();
+
+Console.WriteLine("Hello " + name2 + ", How old are you?");
+
+int age2 = int.Parse(Console.ReadLine());
+
+if (age1 > age2)
+{
+    Console.WriteLine(name1 + " is " + (age1 - age2) + " years older than " + name2);
+}
+else if (age1 < age2)
+{
+    Console.WriteLine(name2 + " is " + (age2 - age1) + " years older than " + name1);
+}
+else
+{
+    Console.WriteLine(name1 + " and " + name2 + " are the same age");
+}
+```
 
 ## Conditional Statements
 
