@@ -78,6 +78,44 @@ else
 
 ## Conditional Statements
 
+| Test Number | Input | Expected Output | Actual Output | Pass/Fail |
+|---|---|---|---|---|
+|1| | "Welcome to the Pizza Shop Application!" |"Welcome to the Pizza Shop Application!" | ✅ |
+| | | "What was the value of your order?"| "What was the value of your order?" |✅  |
+| | "9" | "The total cost of your order is £11" | "The total cost of your order is £11"| ✅ |
+|2| | "Welcome to the Pizza Shop Application!" |"Welcome to the Pizza Shop Application!" |✅  |
+| | | "What was the value of your order?"| "What was the value of your order?" | ✅ |
+| | "10" | "The total cost of your order is £10. You will get free delivery." |"The total cost of your order is £10. You will get free delivery."  | ✅ |
+|3| | "Welcome to the Pizza Shop Application!" |"Welcome to the Pizza Shop Application!" | ✅ |
+| | | "What was the value of your order?"| "What was the value of your order?" |✅  |
+| | "14" | "The total cost of your order is £14. You will get free delivery." | "The total cost of your order is £14. You will get free delivery." | ✅ |
+|4| | "Welcome to the Pizza Shop Application!" | "Welcome to the Pizza Shop Application!"|✅  |
+| | |"What was the value of your order?" | "What was the value of your order?" | ✅  |
+| | "15" | "The total cost of your order is £15. You will get free delivery and a free garlic bread!"| "The total cost of your order is £15. You will get free delivery and a free garlic bread!" |✅ |
+
+```cs
+
+Console.WriteLine("Welcome to the Pizza Shop Application!");
+
+Console.WriteLine("What was the value of your order?");
+
+int order = int.Parse(Console.ReadLine());
+
+if (order > 14)
+{
+    Console.WriteLine("The total value of your order is £" + order + ".\n You will get free delivery and a free garlic bread.");
+}
+else if (order > 9)
+{
+    Console.WriteLine("The total value of your order is £" + order + ".\n You will get free delivery.");
+}
+else
+{
+    int neworder = order + 2;
+    Console.WriteLine("The total value of your order is £" + neworder);
+}
+```
+
 ## Nested Conditions
 
 ## Debugging
