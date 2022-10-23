@@ -4,22 +4,23 @@ This assessment is summative - which means that you get feedback for completing 
 
 ## ToDo List
 
-- [ ] [:key: This time you need to copy the key concepts yourself](#link-here)
-- [ ] [:key: This time you need to copy the key concepts yourself](#link-here)
-- [ ] [:key: This time you need to copy the key concepts yourself](#link-here)
-- [ ] [:key: This time you need to copy the key concepts yourself](#link-here)
+- [ ] [:key: Demonstrate the use of Boolean types, and relational and logical operators.](#boolean)
+- [ ] [:key: Demonstrate how a conditional statement is used to control the flow of execution of code.](#conditional-statements)
+- [ ] [:key: Demonstrate an understanding of the order of evaluation of conditions in if – else if statements and nested conditional statements.](#nested-conditions)
+- [ ] [:key: Demonstrate the use of debugging tools in Visual Studio.](#debugging)
+- 
 - [ ] [:speech_balloon: Express new semantics](#semantics)
 - [ ] [:thought_balloon: Reflect on what you have learnt](#reflection)
 - [ ] [:question: Request feedback (optional)](#requesting-feedback)
 - [ ] :white_check_mark: Get your work checked off by a feedback engineer
 
-## Subheading for Key Concept 1
+## Boolean
 
-## Subheading for Key Concept 2
+## Conditional Statements
 
-## Subheading for Key Concept 3
+## Nested Conditions
 
-## Subheading for Key Concept 4
+## Debugging
 
 ## Requesting Feedback
 
@@ -36,12 +37,16 @@ Complete this table of semantics with your understanding of what these terms mea
 
 | Word | Synonyms | Meaning |
 |---|---|---|
-|Conditional| | |
-|Boolean Type| | |
-|Relational Operator| | |
-|Logical Operator| | |
-|Nested Condition| | |
-|Scope| | |
+|Boolean|logic|true or false|
+|Condition|parameter| phrase used to determine true or false |
+|Code Block| code sectoin | a group of declarations and statements that operates as a unit|
+|Scope| work area| the area in which a code block operates|
+|Relational Operator| comparison operator | compares two values|
+|Logical Operator| binary operator | compares true or false |
+|Break Point| pause point| a point that can pause/stop the running od code |
+|Step Through| resume points | skip past the break point to continue witht he code|
+|Nested Condition| if elif else | an operator that provides multiple paths with specific condtions |
+
 
 ## Reflection
 In this section you should reflect upon what you have learnt. This is an important part of the learning process.
