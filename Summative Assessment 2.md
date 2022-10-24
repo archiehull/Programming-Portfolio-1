@@ -15,11 +15,11 @@ This assessment is summative - which means that you get feedback for completing 
 - [ ] :white_check_mark: Get your work checked off by a feedback engineer
 
 ## Boolean
-Using the "Oldest Sibling" program provided - the use and functionality of Boolean operators can be explored.
+Using the "Oldest Sibling" and "Pizza Shop" program provided - the use and functionality of Boolean operators can be explored.
 
 The "if" statements at the end of the program are prime examples of how logical operators can be used to return a boolean true or false output, in order to dictate the flow of a program.
 
-The results of a tested truth table can be seen below. with each test utilising different parameters in the if/elif/else statement at the end of the code.
+The results of testing can be seen below. with each test utilising different parameters in the if/elif/else statement at the end of the code.
 | Test Number | Input | Output | 
 |---|---|---|
 |1| | "This application will tell us who the oldest of a pair of siblings is." | 
@@ -76,11 +76,7 @@ else
 }
 ```
 
-## Conditional Statements
-
-Using the "Pizza Shop" application provided - the use of conditional statements can be used to demonstrate how they can be used to control the flow of the execution of code.
-
-Using a combination of boolean logic and if statements, the code is able to change its output based on user input -  as can be seen in the truth table and in the code below.
+-------------------
 
 | Test Number | Input | Expected Output | Actual Output | Pass/Fail |
 |---|---|---|---|---|
@@ -119,6 +115,68 @@ else
     Console.WriteLine("The total value of your order is £" + neworder);
 }
 ```
+
+## Conditional Statements
+
+Using the "Sensors" appliction -  the use of conditional statements and logic operators can be demonstrated. 
+
+A table of conditional logic operators can be seen below, and are used to add more complexity and functionality to boolean logic statements, normally used to add multiple conditions to a single statements.
+
+| Operator | Description | Examples | Result |
+|---|---|---|---|
+| && | **AND** - Evaluates to true if both the left hand operand is true | true && true | true |
+| | and the right hand operand is true. | true && false | false |
+| | Otherwise evalutes to false. | false && true | false |
+| | | false && false | false |
+| \| \| | **OR** - Evaluates to true if either the left hand operand is true, | true \|\| true | true |
+| |  or the right hand operand is true, | true \|\| false | true |
+| | or both are true. | false \|\| true | true |
+| | Otherwise evaluates to false. | false \|\| false | false |
+| ! | **NOT** - Only has one right hand operand (is a unary operator) | !true | false |
+| | If the operand on the right hand side is true evaluates to false. | !false | true |
+| | Otherwise evaluates to true. | | |
+
+The results of program testing and debugging can be seen below as different parameters are changed in order to check the functionality of the if statements and the logic operators.
+
+| Test Number | Input | Expected Output | Actual Output | Pass/Fail |
+|---|---|---|---|---|
+|1| | "Is the car in reverse? Press Y for yes or N for no." | "Is the car in reverse? Press Y for yes or N for no." | ✅ |
+| | "Y" | "How much space is there behind the car?" | "How much space is there behind the car?" | ✅ |  
+| | "1.49" | "beep. beep. beep" | "beep. beep. beep" | ✅ |
+|2| | "Is the car in reverse? Press Y for yes or N for no." | "Is the car in reverse? Press Y for yes or N for no." | ✅ |
+| | "Y" | "How much space is there behind the car?" | "How much space is there behind the car?" | ✅ |  
+| | "1.51" | |  | ✅ |
+|3| | "Is the car in reverse? Press Y for yes or N for no." | "Is the car in reverse? Press Y for yes or N for no." | ✅ |
+| | "N" | "How much space is there behind the car?" | "How much space is there behind the car?" | ✅ |  
+| | "1.49" | | | ✅ |
+|4| | "Is the car in reverse? Press Y for yes or N for no." | "Is the car in reverse? Press Y for yes or N for no." | ✅ |
+| | "N" | "How much space is there behind the car?" | "How much space is there behind the car?" | ✅ |  
+| | "1.51" | | | ✅ |
+|5| | "Is the car in reverse? Press Y for yes or N for no." | "Is the car in reverse? Press Y for yes or N for no." | ✅ |
+| | "y" | "How much space is there behind the car?" | "How much space is there behind the car?" | ✅ |  
+| | "1.49" | "beep. beep. beep" | "beep. beep. beep" | ✅ |
+|6| | "Is the car in reverse? Press Y for yes or N for no." | "Is the car in reverse? Press Y for yes or N for no." | ✅ |
+| | "y" | "How much space is there behind the car?" | "How much space is there behind the car?" | ✅ |  
+| | "1.51" | | | ✅ |
+
+```cs
+
+Console.WriteLine("Parking Sensors Application");
+
+Console.WriteLine("Is the car in reverse? Press Y for yes or N for no.");
+
+string isInReverse = Console.ReadLine();
+
+Console.WriteLine("How much space is there behind the car?");
+
+float emptySpaceBehindCar = float.Parse(Console.ReadLine());
+
+if ((isInReverse == "Y" || isInReverse == "y") && emptySpaceBehindCar <= 1.5f)
+{
+    Console.WriteLine("beep, beep, beep");
+}
+```
+
 
 ## Nested Conditions
 
