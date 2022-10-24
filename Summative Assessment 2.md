@@ -179,10 +179,188 @@ if ((isInReverse == "Y" || isInReverse == "y") && emptySpaceBehindCar <= 1.5f)
 
 
 ## Nested Conditions
+Using the "Cinema Application" - the use of nested conditions can be demonstrated.
 
+By using tiered if statements, the program can operate more efficiently by limiting the amount of repetition in the code.
+
+| Test Number | Input | Output | 
+|---|---|---|
+|1| | "What film would you like to see?" | 
+| | "1" | "How old are you?" | 
+| | "14" | "You have selected The Rock " | 
+| | "You are not old enough to see this film" | 
+|2| | "What film would you like to see?" | 
+| | "1" | "How old are you?" | 
+| | "15" | "You have selected The Rock " | 
+| | | "Enjoy the film" | 
+|3| | "What film would you like to see?" | 
+| | "2" | "How old are you?" | 
+| | "17" | "You have selected Face / Off" | 
+| | | "You are not old enough to see this film" | 
+|4| | "What film would you like to see?" | 
+| | "2" | "How old are you?" | 
+| | "18" | "You have selected Face / Off" | 
+| | | "Enjoy the film" | 
+|5| |  "What film would you like to see?" | 
+| | "4" | "How old are you?" | 
+| | "11" | "You have selected The Wicker Man" | 
+| | | "You are not old enough to see this film" | 
+|6| | "What film would you like to see?" | 
+| | "4" | "How old are you?" | 
+| | "12" | "You have selected The Wicker Man" |
+| | | "Enjoy the film" | 
+|7| | "What film would you like to see?" | 
+| | "4" | "How old are you?" | 
+| | "1" | "You have selected The Croods" | 
+| | | "Enjoy the film" | 
+|8| | "What film would you like to see?" | 
+| | "4" | "How old are you?" | 
+| | "15" | "You have selected The Croods" | 
+| | | "Enjoy the film" | 
+```cs
+Console.WriteLine("Welcome to the AMAZING Nicorama Cage-athon!");
+Console.WriteLine("A celebration of 30 years of Nic Cage.");
+
+Console.WriteLine("1. The Rock(1996)(15)");
+Console.WriteLine("2. Face / Off(1997)(18)");
+Console.WriteLine("3. The Wicker Man(2005) (12)");
+Console.WriteLine("4. The Croods(2012)(U)");
+
+Console.WriteLine("What film would you like to see?");
+
+string filmSelectionString = Console.ReadLine();
+
+if (filmSelectionString == "4")
+{
+    Console.WriteLine("Enjoy the film");
+}
+else
+{
+    Console.WriteLine("How old are you?");
+    int age = int.Parse(Console.ReadLine());
+    if (age >= 18)
+    {
+        Console.WriteLine("Enjoy the film");
+    }
+    else if (age >= 15)
+    {
+        if (filmSelectionString != "2")
+        {
+            Console.WriteLine("Enjoy the film");
+        }
+        else
+        {
+            Console.WriteLine("You are not old enough to see this film");
+        }
+    }
+    else if (age >= 12)
+    {
+        if (filmSelectionString == "3")
+        {
+            Console.WriteLine("Enjoy the film");
+        }
+        else
+        {
+            Console.WriteLine("You are not old enough to see this film");
+        }
+    }
+    else
+    {
+        Console.WriteLine("You are not old enough to see this film");
+    }
+}
+```
 
 
 ## Debugging
+
+Using the "Cinema Application Revisited" - debugging can be used.
+
+Breaks can be made in the code (represented by red cirlces in the grey margin), and in a break, the values stored in each variable and be viewed and adjusted, and then step overs can be used to progress through the code line by line.
+
+![debug](images/debug.png)
+
+| Test Number | Input | Output | 
+|---|---|---|
+|1| | "What film would you like to see?" | 
+| | "1" | "How old are you?" |
+| | "17" | "You are not old enough to see this film" |
+|2| | "What film would you like to see?" |
+| | "1" | "How old are you?" |
+| | "18" | "Enjoy the film" |
+|3| | "What film would you like to see?" | 
+| | "5" | "How old are you?" |  
+| | "14" | "You are not old enough to see this film"  | 
+|4| | "What film would you like to see?" | 
+| | "5" | "How old are you?" |  
+| | "16" | "Enjoy the film" | 
+|5| | "What film would you like to see?" | 
+| | "6" | "How old are you?" | 
+| | "10" | "You are not old enough to see this film"  | 
+|6| | "What film would you like to see?" |
+| | "6" | "How old are you?" |
+| | "17" | "Enjoy the film" | 
+
+```cs
+Console.WriteLine("Welcome to the AMAZING Nicorama Cage-athon!");
+Console.WriteLine("A celebration of 30 years of Nic Cage.");
+
+Console.WriteLine("What film would you like to see?");
+
+Console.WriteLine("1. Leaving Las Vegas(1995) (18)");
+Console.WriteLine("2. The Rock(1996)(15)");
+Console.WriteLine("3. Face / Off(1997)(18)");
+Console.WriteLine("4. Con Air(1997)(18)");
+Console.WriteLine("5. Gone In 60 Seconds(1999)(15)");
+Console.WriteLine("6. The Wicker Man(2005) (12)");
+Console.WriteLine("7. Kick - Ass(2009)(15)");
+Console.WriteLine("8. The Croods(2012)(U)");
+Console.WriteLine("9. The Croods 2: A New Age (2020) (U)");
+
+string filmSelectionString = Console.ReadLine();
+
+if (filmSelectionString == "8" || filmSelectionString == "9")
+{
+    Console.WriteLine("Enjoy the film");
+}
+else
+{
+    Console.WriteLine("How old are you?");
+    int age = int.Parse(Console.ReadLine());
+
+    if (age >= 18)
+    {
+        Console.WriteLine("Enjoy the film");
+    }
+    else if (age >= 15)
+    {
+        if (filmSelectionString != "1" && filmSelectionString != "3" && filmSelectionString != "4")
+        {
+            Console.WriteLine("Enjoy the film");
+        }
+        else
+        {
+            Console.WriteLine("You are not old enough to see this film");
+        }
+    }
+    else if (age >= 12)
+    {
+        if (filmSelectionString == "6")
+        {
+            Console.WriteLine("Enjoy the film");
+        }
+        else
+        {
+            Console.WriteLine("You are not old enough to see this film");
+        }
+    }
+    else
+    {
+        Console.WriteLine("You are not old enough to see this film");
+    }
+}
+```
+
 
 ## Requesting Feedback
 
@@ -207,11 +385,17 @@ Complete this table of semantics with your understanding of what these terms mea
 |Logical Operator| binary operator | compares true or false |
 |Break Point| pause point| a point that can pause/stop the running od code |
 |Step Through| resume points | skip past the break point to continue witht he code|
-|Nested Condition| if elif else | an operator that provides multiple paths with specific condtions |
+|Nested Condition| if elif else | an operator that provides multiple paths with specific condtions(if within an if) |
 
 
 ## Reflection
 In this section you should reflect upon what you have learnt. This is an important part of the learning process.
 - What have you learnt from these exercises?
+
+how to debug code
 - How can you apply what you have learnt?
+
+in future projects
 - What new features of C# are you now able to use?
+
+logical operators and debugging
