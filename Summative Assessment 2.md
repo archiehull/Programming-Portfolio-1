@@ -78,6 +78,10 @@ else
 
 ## Conditional Statements
 
+Using the "Pizza Shop" application provided - the use of conditional statements can be used to demonstrate how they can be used to control the flow of the execution of code.
+
+Using a combination of boolean logic and if statements, the code is able to change its output based on user input -  as can be seen in the truth table and in the code below.
+
 | Test Number | Input | Expected Output | Actual Output | Pass/Fail |
 |---|---|---|---|---|
 |1| | "Welcome to the Pizza Shop Application!" |"Welcome to the Pizza Shop Application!" | ✅ |
@@ -117,6 +121,8 @@ else
 ```
 
 ## Nested Conditions
+
+
 
 ## Debugging
 
