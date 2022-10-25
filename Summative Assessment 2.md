@@ -181,7 +181,7 @@ if ((isInReverse == "Y" || isInReverse == "y") && emptySpaceBehindCar <= 1.5f)
 ## Nested Conditions
 Using the "Cinema Application" - the use of nested conditions can be demonstrated.
 
-By using if tatements within if statements, the program can operate more efficiently by limiting the amount of repetition in the code.
+By using if statements within if statements, the program can operate more efficiently by limiting the amount of repetition in the code.
 
 | Test Number | Input | Output | 
 |---|---|---|
