@@ -136,7 +136,7 @@ A table of conditional logic operators can be seen below, and are used to add mo
 | | If the operand on the right hand side is true evaluates to false. | !false | true |
 | | Otherwise evaluates to true. | | |
 
-The results of program testing and debugging can be seen below as different parameters are changed in order to check the functionality of the if statements and the logic operators.
+The results of program testing can be seen below as different parameters are changed in order to check the functionality of the if statements and the logic operators.
 
 | Test Number | Input | Expected Output | Actual Output | Pass/Fail |
 |---|---|---|---|---|
