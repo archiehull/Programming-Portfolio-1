@@ -33,12 +33,15 @@ Complete this table of semantics with your understanding of what these terms mea
 
 | Word | Synonyms | Meaning |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
+|Loop| cycle| a block of repeating code |
+|Initialisation Statements| activation statement| the statement that dictates whether a loop will start or not |
+|Condition statements|parameter checking statement | a set of rules that need to return the required output|
+|Iterator statements| recursive statement | the statement that dictates what gets modified with each iteration |
+|Increment expression| increase factor statement | adds 1 to their operand|
+|Decrement expression| decrease factor statement | subtracts 1 to from their operand|
+|Prefix| before | the code before a loop / statement |
+|Postfix| after | the code after a loop / statement  |
+
 
 ## Reflection
 In this section you should reflect upon what you have learnt. This is an important part of the learning process.
