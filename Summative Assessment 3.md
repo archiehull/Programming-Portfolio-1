@@ -14,6 +14,24 @@ This assessment is summative - which means that you get feedback for completing 
 
 ## Do While and While Loops
 
+The do while loop executes the content of the loop once before checking the condition of the while.
+```cs
+i =0
+do {
+        Console.WriteLine("Hello World!")
+        i++
+    } while(i<2);
+```
+Whereas a while loop will check the condition first before executing the content.
+```cs
+i =0
+while(i<2) {
+        Console.WriteLine("Hello World!")
+        i++
+    }
+```
+
+
 ## Break and Continue
 
 ## Nested Loops
