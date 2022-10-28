@@ -34,6 +34,32 @@ while(i<2) {
 
 ## Break and Continue
 
+*Break* will exit the loop completely, *Continue* will just skip the current iteration.
+
+The break will cause the loop to exit on the first iteration - DoSomeThingWith will never be executed.
+
+```cs
+for (int i = 0; i < 10; i++) {
+    if (i == 0) {
+        break;
+    }
+
+    DoSomeThingWith(i);
+}
+```
+
+The continue with skip the first iteration, so wont execute *DoSomeThingWith(i)* the first time round - but will for i=1,9.
+
+```cs
+for (int i = 0; i < 10; i++) {
+    if(i == 0) {
+        continue;
+    }
+
+    DoSomeThingWith(i);
+}
+```
+
 ## Nested Loops
 
 ## Requesting Feedback
