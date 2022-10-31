@@ -62,6 +62,21 @@ for (int i = 0; i < 10; i++) {
 
 ## Nested Loops
 
+A nested loop is a loop within a loop, and can be completed using an if loop, while loop or a do while loop.
+
+This is an example of a nested while loop.
+
+```cs
+while(condition) {
+   while(condition) {
+      statement(s);
+   }
+   statement(s);
+}
+```
+
+
+
 ## Requesting Feedback
 
 This section is optional, but encouraged. Feedback is crucial to the learning process. If you have any questions about what you have learnt this week record them here for your demonstrator to answer. **Replace** the bullet points below with any questions you might have.
@@ -90,5 +105,10 @@ Complete this table of semantics with your understanding of what these terms mea
 ## Reflection
 In this section you should reflect upon what you have learnt. This is an important part of the learning process.
 - What have you learnt from these exercises?
+how to use break and continue and their differences
+
 - How can you apply what you have learnt?
+in future conding projects
+
 - What new features of C# are you now able to use?
+break & continue
