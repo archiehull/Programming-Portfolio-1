@@ -50,8 +50,21 @@ You can modify values to elements in an array as you would any other variable.
 ```cs
 numbers[4] = 100; 
 names[2] = "Aditi"; 
+```
 
 ## Iterating Arrays
+Using a for loop, the values in an array can be accessed using the iterative value of i.
+
+```cs
+int[] numbers;
+numbers = new int[9]
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    Console.WriteLine("Enter the number for index value " + (i));
+    numbers[i] = int.Parse(Console.ReadLine());
+}
+```
 ## Reference Types
 ## Multidimentional Arrays
 
