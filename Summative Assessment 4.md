@@ -70,9 +70,34 @@ for (int i = 0; i < numbers.Length; i++)
 There are two types of memory storage - by reference and by value.
 
 *By Reference* uses pointers to access memory locations that are seperate from where the array is created.
+
 *By Value* uses contiguous memory storage to store array data consecutively in memory.
 
 ## Multidimentional Arrays
+
+Multidimensional arrays operate in a similar way to a table or linked lists - in which the index values serve as an axis / column-row value.
+
+Array ( a row of elements ):
+```cs
+[ ][ ][ ][ ][ ][ ]
+```
+2-D Array ( a table ):
+```cs
+[ ][ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ][ ]
+```
+
+3-D Array ( a cube ) etc...
+
+Multidensional arrays can be called with the following :
+
+```cs
+char[,] board = new char[7, 6];
+board[0, 0] = 'R';
+```
+
 
 ## Semantics
 
@@ -91,12 +116,12 @@ There are two types of memory storage - by reference and by value.
 
 In this section you should reflect upon what you have learnt. This is an important part of the learning process.
 - What have you learnt from these exercises?
-
+how to iterate arrays in c#
 
 
 - How can you apply what you have learnt?
-
+in future programs in c#
 
 
 - What new features of C# are you now able to use?
-
+arrays and iteration
