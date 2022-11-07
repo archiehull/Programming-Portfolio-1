@@ -66,6 +66,12 @@ for (int i = 0; i < numbers.Length; i++)
 }
 ```
 ## Reference Types
+
+There are two types of memory storage - by reference and by value.
+
+*By Reference* uses pointers to access memory locations that are seperate from where the array is created.
+*By Value* uses contiguous memory storage to store array data consecutively in memory.
+
 ## Multidimentional Arrays
 
 ## Semantics
@@ -76,7 +82,7 @@ for (int i = 0; i < numbers.Length; i++)
 |“contiguous in memory”| adjacent | when data is stored next to each other in memory|
 |Element| array variable | a variable in an array |
 |Index| array location | the elements in an array |
-|Reference type / Managed by reference| referred memory | when an area of memory is allocated to an array, and isnt stored where it's created, but serves more as a pointer|
+|Reference type / Managed by reference| referred memory | when an area of memory is allocated to an array, and isn't stored where it's created, but serves more as a pointer|
 |Value type / Managed by value| direct memory | memory is allocated directly where it's created |
 |For each| index loop | a loop repeating for each index value of the array|
 |Out of bounds| off limits| when an array index is accessed out of the declared memory area|
