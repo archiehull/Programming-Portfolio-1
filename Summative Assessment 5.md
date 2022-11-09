@@ -1,23 +1,28 @@
 # 441101-2223-Summative-5
 
-By completing the exercises in this practical work you should gain the experience necessary to demonstrate the following key concepts:
+# To Do
 
-:key: Split a string into several strings using appropriate delimiters.
+- [ ] [:key: Split a string into several strings using appropriate delimiters.](#splitting-strings)
 
-:key: Iterate over the characters in a string.
+- [ ] [:key: Iterate over the characters in a string.](#iterating-strings)
 
-:key: Extract part of a string (a substring) from a larger string.
+- [ ] [:key: Extract part of a string (a substring) from a larger string.](#extracting-strings)
 
-:key: Demonstrate an understanding of why strings are immutable reference types and what the implications of that are.
+- [ ] [:key: Demonstrate an understanding of why strings are immutable reference types and what the implications of that are.](#understanding-strings)
 
-You may have to do some research to understand about immutable reference types. This has been covered in lectures, but it may also be useful to look at this [documentation](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/)
 
-After you have completed this lab you should demonstrate this in your digital portfolio. **You will need to create a new page in your portfolio to do this, and copy the key concepts and semantics from this page into your new page**
+- [ ] [:speech_balloon: Express new semantics](#semantics)
+- [ ] [:thought_balloon: Reflect on what you have learnt](#reflection)
+
+## Splitting strings
+
+## Iterating strings
+
+## Extracting strings
+
+## Understanding strings
 
 ## Semantics
-
-In order to talk about programming we need to establish a set of core terminology, or "semantics". In this context "semantics" means the words we use to talk about programming. This is different to Syntax, which is what we type to tell the computer what we want it do to. It is important that when we use words that have
-a special meaning in the context of programming we share a common understanding. In addition to demonstrating key concepts after completing this practical work you should also define the following semantincs in your digital portfolio.
 
 | Word | Synonyms | Meaning |
 |---|---|---|
@@ -31,3 +36,17 @@ a special meaning in the context of programming we share a common understanding.
 |Out of bounds| | |
 |Verbatim| | |
 |null| | |
+
+## Reflection
+
+In this section you should reflect upon what you have learnt. This is an important part of the learning process.
+- What have you learnt from these exercises?
+how to use strings in c#
+
+
+- How can you apply what you have learnt?
+in future programs in c#
+
+
+- What new features of C# are you now able to use?
+strings
