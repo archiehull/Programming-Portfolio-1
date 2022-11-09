@@ -16,6 +16,32 @@
 
 ## Splitting strings
 
+Using the *".Split"* suffix, spaces can be used to seperate a string of text into an array, where each element is a word.
+
+For example :
+
+```console
+User Input :
+"Uni of Hull Computer Science"
+```
+```cs
+string input = Console.ReadLine();
+
+string[] separateStrings = input.Split(' ');
+
+for (int i = 0; i < separateStrings.Length; i++) 
+{
+  Console.WriteLine(separateStrings[i]);
+}
+```
+```console
+Console Output:
+Uni
+of
+Hull
+Computer Science
+```
+
 ## Iterating strings
 
 ## Extracting strings
