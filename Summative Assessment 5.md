@@ -44,6 +44,41 @@ Computer Science
 
 ## Iterating strings
 
+Use the *"Title Case Program"* example, iteration can be used in strings in order to capitalise the first letter of each word in a string using *characterIndex*.
+
+The program uses a for loop to go through each letter of each word in the string and uses the *"char.ToUpper"* function to capatilse the start of each word, the first letter of a word being when *characterIndex = 0* or the character follows a space (" ").
+
+```cs
+Console.WriteLine("Title Case Program");
+Console.WriteLine("Please Enter The String To Be Converted To Title Case");
+
+string input = Console.ReadLine();
+
+string output = string.Empty;
+
+input = input.ToLower();
+
+for (int characterIndex = 0; characterIndex < input.Length; characterIndex++)
+{
+if (characterIndex == 0)
+  {
+  output += char.ToUpper(input[characterIndex]);
+  }
+
+else if (input[characterIndex - 1] == ' ')
+  {
+    output += char.ToUpper(input[characterIndex]);
+  }
+  
+else
+  {
+    output += input[characterIndex];
+  }
+}
+
+
+```
+
 ## Extracting strings
 
 ## Understanding strings
