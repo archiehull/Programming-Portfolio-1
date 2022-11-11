@@ -2,11 +2,11 @@
 
 # To Do
 
-- [ ] [:key: Split a string into several strings using appropriate delimiters.](#splitting-strings)
+- [ ] [:key: Split a string into several strings using appropriate delimiters.](#splitting-and-extracting-strings)
+
+- [ ] [:key: Extract part of a string (a substring) from a larger string.](#splitting-and-extracting-strings)
 
 - [ ] [:key: Iterate over the characters in a string.](#iterating-strings)
-
-- [ ] [:key: Extract part of a string (a substring) from a larger string.](#extracting-strings)
 
 - [ ] [:key: Demonstrate an understanding of why strings are immutable reference types and what the implications of that are.](#understanding-strings)
 
@@ -14,9 +14,10 @@
 - [ ] [:speech_balloon: Express new semantics](#semantics)
 - [ ] [:thought_balloon: Reflect on what you have learnt](#reflection)
 
-## Splitting strings
+## Splitting and Extracting strings
 
-Using the *".Split"* suffix, spaces can be used to seperate a string of text into an array, where each element is a word.
+
+Using the *".Split"* suffix, spaces can be used to seperate a string of text and extract into an array, where each element is a word.
 
 For example :
 
@@ -79,24 +80,24 @@ else
 
 ```
 
-## Extracting strings
-
 ## Understanding strings
+
+Strings are immutable reference types because they are essentially character arrays and cannot be changed. When a string is edited, instead of changing the values within the string, a new string is created and the information from its predecessor is coppied over.
 
 ## Semantics
 
 | Word | Synonyms | Meaning |
 |---|---|---|
-|string| | |
-|char| | |
-|Concatenate| | |
-|Escape Character| | |
-|Immutable| | |
-|Delimiter| | |
-|Interpolated String| | |
-|Out of bounds| | |
-|Verbatim| | |
-|null| | |
+|string|words| |
+|char|character | |
+|Concatenate| arrange | |
+|Escape Character| control phrase | |
+|Immutable|unchangable | |
+|Delimiter|boundry | |
+|Interpolated String| variable substitution | |
+|Out of bounds|out of access | |
+|Verbatim|identical| |
+|null|n/a | |
 
 ## Reflection
 
