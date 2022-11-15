@@ -88,16 +88,16 @@ Strings are immutable reference types because they are essentially character arr
 
 | Word | Synonyms | Meaning |
 |---|---|---|
-|string|words| |
-|char|character | |
-|Concatenate| arrange | |
-|Escape Character| control phrase | |
-|Immutable|unchangable | |
-|Delimiter|boundry | |
-|Interpolated String| variable substitution | |
-|Out of bounds|out of access | |
-|Verbatim|identical| |
-|null|n/a | |
+|string|words|a sequence of characters |
+|char|character | a letter of the alphabet |
+|Concatenate| arrange |the joining of strings |
+|Escape Character| control phrase | Character which invokes an alternative interpretation on subsequent characters in a character sequence|
+|Immutable|unchangable | fixed |
+|Delimiter|boundry |Sequence of one or more characters used to specify a boundary |
+|Interpolated String| variable substitution |changing a strings placeholders resulting in the placeholders being replaced with their corresponding values |
+|Out of bounds|out of access | accessing an aeeay outside of its|
+|Verbatim|identical|directly corresponding |
+|null|n/a | void |
 
 ## Reflection
 
