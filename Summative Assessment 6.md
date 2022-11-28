@@ -10,6 +10,37 @@
 
 ## Calling and Passing Methods
 
+```cs
+void SayHello()
+{
+    Console.WriteLine("Hello, World!");
+}
+
+void SayHelloWithName(string pName)
+{
+    Console.WriteLine($"Hello, {pName}");
+}
+
+string GetName()
+{
+    Console.WriteLine("What is your name?");
+    string name = Console.ReadLine();
+    return name;
+}
+
+string name = GetName()
+
+SayHelloWithName(name)
+
+```
+
+```console
+What is your name?
+archie
+Hello, archie
+```
+
+
 ## Using Methods to Increase Readability and Reduce Scope
 
 ## Optional Parameters and Method Overloading
