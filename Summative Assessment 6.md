@@ -42,6 +42,13 @@ Hello, archie
 
 
 ## Using Methods to Increase Readability and Reduce Scope
+Using methods can turn code from looking like this :
+ <img src="images/expand1.png" width="400">
+To this:
+ <img src="images/expand2.png" width="400">
+ 
+This means that the scope of the code is only operating from one line instead of having it run though of all each line chronologically.
+This makes code easier to read, easier to debug and easier to reuse.
 
 ## Optional Parameters and Method Overloading
 
