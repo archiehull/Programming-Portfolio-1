@@ -8,9 +8,14 @@
 
 :key: Demonstrate the use of optional parameters and method overloading.
 
+## Calling and Passing Methods
+
+## Using Methods to Increase Readability and Reduce Scope
+
+## Optional Parameters and Method Overloading
+
 ## Semantics
-
-
+ 
 | Word | Synonyms | Meaning |
 |---|---|---|
 |Method Signature| | |
