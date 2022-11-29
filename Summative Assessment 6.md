@@ -42,8 +42,63 @@ Hello, archie
 
 
 ## Using Methods to Increase Readability and Reduce Scope
+Using methods can turn code from looking like this :
+
+ <img src="images/expand1.png" width="400">
+ 
+ 
+To this:
+
+ <img src="images/expand2.png" width="400">
+ 
+This means that the scope of the code is only operating from one line instead of having it run though of all each line chronologically.
+This makes code easier to read, easier to debug and easier to reuse.
 
 ## Optional Parameters and Method Overloading
+
+Assigning one of the parameters to a value when creating a method results in that value being the default if no value is entered when the method is called.
+```cs
+void MessageRepeater(string pMessage, int pRepetitions = 1)
+{
+  for(int i = 1; i <= pRepetitions; i++)
+  {
+    Console.WriteLine($"{i}. {pMessage}");
+  }
+}
+```
+
+
+
+```cs
+int SumValues(int[] pArray)
+{
+    int total = 0;
+
+    //int total = pArray.Sum();
+
+    //for (int i = 0; i <= pArray.Length; i++)
+    //{
+    //    total += pArray[i];
+    //}
+
+    foreach (int item in pArray)
+    {
+        total += item;
+    }
+
+    return total;
+}
+
+int[] numbers = { 10, 2, 5, 7, 13, 8, 4 };
+
+int sum = SumValues(numbers);
+
+Console.WriteLine(sum);
+```
+
+```console
+49
+```
 
 ## Semantics
  
