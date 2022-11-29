@@ -160,3 +160,18 @@ These were the error messages displayed:
 |Optional Parameter|additional parameter |a parameter assigned with a default value that doesnt necissarily need to be called |
 |Refactor|adjust | changing code without changing its functionailty|
 
+
+## Reflection
+
+In this section you should reflect upon what you have learnt. This is an important part of the learning process.
+- What have you learnt from these exercises?
+how to use methods in c#
+
+
+- How can you apply what you have learnt?
+in future programs in c#
+
+
+- What new features of C# are you now able to use?
+methods
+
