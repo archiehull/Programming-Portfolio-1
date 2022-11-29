@@ -141,8 +141,10 @@ sum = SumValues(13, 27);
 
 Console.WriteLine(sum);
 ```
-These were the error messages displayed
-<img src="images/error.png" width="500">
+These were the error messages displayed:
+
+
+<img src="images/error.png">
 
 ## Semantics
  
