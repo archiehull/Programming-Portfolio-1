@@ -113,3 +113,18 @@ del("Hello World!");
 |ref| reference| must be definitely assigned. The called method many reassign that parameter.|
 |The DRY principle| shush| dont repeat yourself|
 |The WET principle| waffle|  write every time|
+
+## Reflection
+
+In this section you should reflect upon what you have learnt. This is an important part of the learning process.
+- What have you learnt from these exercises?
+how to use passing in c#
+
+
+- How can you apply what you have learnt?
+in future programs in c#
+
+
+- What new features of C# are you now able to use?
+passing
+
