@@ -67,7 +67,7 @@ void MessageRepeater(string pMessage, int pRepetitions = 1)
 }
 ```
 
-
+I found three different methods for creating a Sum method for an array, be that a for loop, a foreach loop or suing the .Sum function already in place (which feels like cheating).
 
 ```cs
 int SumValues(int[] pArray)
@@ -99,18 +99,79 @@ Console.WriteLine(sum);
 ```console
 49
 ```
+I was unable to successfully created an overloading method, however I still feel like I understand the principels behind them.
+
+```cs
+int SumValues(int[] pArray)
+{
+    //int total = pArray.Sum();
+
+    //int total = 0
+
+    //for (int i = 0; i <= pArray.Length; i++)
+    //{
+    //    total += pArray[i];
+    //}
+
+    int total = 0;
+
+    foreach (int item in pArray)
+    {
+        total += item;
+    }
+
+    return total;
+}
+
+
+
+int SumValues(int pOne = 0, int pTwo = 0, int pThree = 0, int pFour = 0, int pFive = 0)
+{
+    int total = (pOne + pTwo + pThree + pFour + pFive);
+    return total;
+
+}
+int[] numbers = { 10, 2, 5, 7, 13, 8, 4 };
+
+int sum = SumValues(numbers);
+
+Console.WriteLine(sum);
+
+sum = SumValues(13, 27);
+
+Console.WriteLine(sum);
+```
+These were the error messages displayed:
+
+
+<img src="images/error.png">
 
 ## Semantics
  
 | Word | Synonyms | Meaning |
 |---|---|---|
-|Method Signature| | |
-|Parameter| | |
-|Argument| | |
-|Return type| | |
-|Method Call| | |
-|Method Scope| | |
-|Overloaded Method| | |
-|Optional Parameter| | |
-|Refactor| | |
+|Method Signature|method name |the name of the method |
+|Parameter|variable | the variables within the method |
+|Argument|input | the data passed into the parameters |
+|Return type|data output | the data type outputted by a method |
+|Method Call|method use | when a method is implaneted and used within the code |
+|Method Scope|method work area | the area of memory in which the method can access other data |
+|Overloaded Method|stacked method |two methods with the same name that can be called and used differnetly depending on the argument |
+|Optional Parameter|additional parameter |a parameter assigned with a default value that doesnt necissarily need to be called |
+|Refactor|adjust | changing code without changing its functionailty|
+
+
+## Reflection
+
+In this section you should reflect upon what you have learnt. This is an important part of the learning process.
+- What have you learnt from these exercises?
+how to use methods in c#
+
+
+- How can you apply what you have learnt?
+in future programs in c#
+
+
+- What new features of C# are you now able to use?
+methods
 
