@@ -1,5 +1,7 @@
 Key Concept - Be able to create a class and instantiate that class using a constructor
+
 Key Concept - Be able to reduce repeated code by chaining constructors
+
 Key Concept - Demonstrate the above skills by completing the challenge exercise
 
 Express New Semantics
