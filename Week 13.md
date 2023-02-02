@@ -4,8 +4,10 @@ Key Concept - Be able to reduce repeated code by chaining constructors
 
 Key Concept - Demonstrate the above skills by completing the challenge exercise
 
-Express New Semantics
-Reflect on what you have learnt
+ <img src="images/CLclass.png">
+
+ <img src="images/CLmain.png">
+
 
 ## Semantics 
 
@@ -17,7 +19,7 @@ Reflect on what you have learnt
 |member variable		|a member of a class or an object instantiated from that class|
 |member method		|a procedure associated with a message and an object|
 |constructor		|a special type of subroutine called to create an object|
-|default constructor|the default 	|
+|default constructor|the default values given to object if unassigned	|
 |constructor chaining	| creating an instance of a class with multiple constructors, then using one constructor to call another	|
 |the "this" keyword|To have an object pass itself as a parameter to other methods|
 
