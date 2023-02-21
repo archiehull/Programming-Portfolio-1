@@ -13,13 +13,13 @@ Key Concept - Be able to use public and private access modifiers
 
 | Word | definition|
 |---|---|
-|Property|	|
-|Generic class	Template class||
-|access modifier|	|
-|public member variable||
-|private member variable||
-|public member method||
-|private member method|
+|Property|	a special sort of class member, intermediate in functionality between a field (or data member) and a method.|
+|Generic class	Template class|encapsulate operations that are not specific to a particular data type.|
+|access modifier|	specify the accessibility of the methods, classes, constructors, and other members of the class.|
+|public member variable|publicly accessible variable that is associated with a specific object, and accessible for all its methods|
+|private member variable|privately accessible variable that is associated with a specific object, and accessible for all its methods|
+|public member method|publicly accessable operators and functions that are declared as members of a class. |
+|private member method|privately accessible operators and functions that are declared as members of a class. |
 
 
 	
