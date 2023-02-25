@@ -1,11 +1,16 @@
 Key Concept - Be able to protect the integrity of a class using access modifiers
+
 Key Concept - Be able to demonstrate understanding of what it means to have multiple instances of a class
+
 Key Concept - Be able to demonstrate the different between static and non-static (instance) variables
+
 Key Concept - Demonstrate the above skills by completing the challenge exercise
 
-<img src="images/.png">
+<img src="images/circ1.png">
 
-<img src="images/.png">
+<img src="images/circ2.png">
+
+<img src="images/main11.png">
 
 
 ## Semantics 
