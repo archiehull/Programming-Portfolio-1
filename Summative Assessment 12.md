@@ -1,6 +1,9 @@
 Key Concept - To be able to appropriately reuse code using inheritance
+
 Key Concept - To be able to call a base constructor from a child constructor
+
 Key Concept - To be understand access modifiers in inheritance hierarchies
+
 Key Concept - Demonstrate the above skills by completing the challenge exercise
 
 <img src="images/.png">
