@@ -17,13 +17,13 @@ Key Concept - Demonstrate the above skills by completing the challenge exercise
 
 | Word | definition|
 |---|---|
-|access modifier|		
-|public |
-|private |	
-|static |
-|global	|	
-|design pattern|		
-|singleton pattern|
+|access modifier| used to control the level of access one part of a program has on another (i.e class members)|		
+|public | accessable from anywhere |
+|private | only accessable withing the class |
+|static |belongs to the class, no the instance |
+|global	| refers to global namespace |
+|design pattern| standard solutions to common problems |
+|singleton pattern| a class that can only have 1 instance |
 
 
 	
