@@ -6,9 +6,214 @@ Key Concept - To be understand access modifiers in inheritance hierarchies
 
 Key Concept - Demonstrate the above skills by completing the challenge exercise
 
-<img src="images/.png">
+```cs
 
-<img src="images/.png">
+Console.WriteLine("Hello, Mini Heroes Quest!");
+
+Ranger ranger = new Ranger("John");
+Barbarian barbarian = new Barbarian("Susan");
+Mage mage = new Mage("Richard");
+
+
+Console.WriteLine($"{ranger.Name} the ranger joined the party!");
+Console.WriteLine($"{barbarian.Name} the barbarian joined the party!");
+Console.WriteLine($"{mage.Name} the mage joined the party!");
+
+ranger.FireArrows(barbarian);
+barbarian.SwingAxe(mage);
+mage.ThrowFireball(ranger);
+ranger.FireArrows(mage);
+mage.Heal(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian); // The ranger has fired all arrows
+ranger.CollectArrows(); // The ranger collects all the fired arrows
+
+Console.WriteLine($"{ranger.Name} has {ranger.numberOfArrows} arrows left.");
+Console.WriteLine($"{barbarian.Name} has {barbarian.healthPoints} health points left.");
+Console.WriteLine($"{mage.Name} has {mage.energyPoints} energy points left.");
+
+ranger.Rest();
+barbarian.Rest();
+mage.Rest();
+
+Console.WriteLine($"{ranger.Name}, {barbarian.Name}, and {mage.Name} all took a rest!");
+
+Knight knight = new Knight("Niel");
+
+knight.SwingSword(mage);
+
+Console.ReadLine();
+
+
+public class Character
+{
+    public int _healthPoints;
+    public int _energyPoints;
+    public string Name { get; private set; }
+    public int maxHealth;
+    public int maxEnergy;
+    public int numberOfArrows { get; protected set; }
+    public int firedArrows { get; protected set; }
+
+    public int healthPoints
+    {
+        get
+        { return _healthPoints; }
+        set
+        {
+            if (value < maxHealth) { _healthPoints = value; }
+            else { _healthPoints = maxHealth; }
+        }
+    }
+    public int energyPoints
+    {
+        get { return _energyPoints; }
+        protected set
+        {
+            if (value < maxEnergy) { _energyPoints = value; }
+            else { _energyPoints = maxEnergy; }
+        }
+    }
+
+    public Character(string Name)
+    {
+        this.Name = Name;
+    }
+
+    public bool isKnockedOut { get { return healthPoints <= 0; } }
+
+    public void Rest()
+    {
+        if (!isKnockedOut)
+        {
+            energyPoints = maxEnergy;
+            healthPoints = maxHealth;
+        }
+    }
+}
+
+public class Ranger : Character
+{
+    public Ranger(string Name) : base(Name)
+    {
+        maxHealth = 10;
+        maxEnergy = 8;
+        numberOfArrows = 10;
+        firedArrows = 0;
+    }
+
+    public void CollectArrows()
+    {
+        numberOfArrows += firedArrows;
+        firedArrows = 0;
+    }
+
+    public void FireArrows(Character target)
+    {
+        if (numberOfArrows > 0 && energyPoints >= 1 && !isKnockedOut)
+        {
+            energyPoints -= 1;
+            numberOfArrows--;
+            firedArrows++;
+            Console.WriteLine($"{Name} the ranger shot an arrow at {target.Name}.");
+            target.healthPoints -= 1;
+        }
+    }
+}
+
+public class Barbarian : Character
+{
+    public Barbarian(string Name) : base(Name)
+    {
+        maxHealth = 18;
+        maxEnergy = 12;
+    }
+
+    public void SwingAxe(Character target)
+    {
+        if (energyPoints >= 3 && !isKnockedOut)
+        {
+            Console.WriteLine($"{Name} the barbarian swung his mighty axe at {target.Name}.");
+            target.healthPoints -= 3;
+        }
+    }
+}
+
+public class Mage : Character
+{
+    public Mage(string Name) : base(Name)
+    {
+        maxHealth = 8;
+        maxEnergy = 8;
+    }
+
+    public void ThrowFireball(Character target)
+    {
+        if (energyPoints >= 2 && !isKnockedOut)
+        {
+            Console.WriteLine($"{Name} the mage threw a fireball at {target.Name}.");
+            target.healthPoints -= 2;
+        }
+    }
+
+    public void Heal(Character target)
+    {
+        if (energyPoints >= 1 && !isKnockedOut)
+        {
+            energyPoints -= 1;
+            target.healthPoints += 5;
+        }
+    }
+}
+
+public class Knight : Character
+{
+    public Knight(string Name) : base(Name)
+    {
+        maxHealth = 12;
+        maxEnergy = 12;
+    }
+
+    public void ShieldBash(Character target)
+    {
+        if (energyPoints >= 2 && !isKnockedOut)
+        {
+            Console.WriteLine($"{Name} the knght bashed {target.Name} with its shield.");
+            target.healthPoints -= 2;
+        }
+    }
+
+    public void SwingSword(Character target)
+    {
+        if (energyPoints >= 3 && !isKnockedOut)
+        {
+            energyPoints -= 3;
+            Console.WriteLine($"{Name} the knght swung its sword at {target.Name}.");
+            target.healthPoints -= 4;
+        }
+    }
+}
+
+```
+
+```shell
+
+John the ranger joined the party!
+Susan the barbarian joined the party!
+Richard the mage joined the party!
+John has 10 arrows left.
+Susan has 0 health points left.
+Richard has 0 energy points left.
+John, Susan, and Richard all took a rest!
+```
 
 
 ## Semantics 
