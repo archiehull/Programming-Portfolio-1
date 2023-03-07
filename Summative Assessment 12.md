@@ -1,4 +1,4 @@
-Key Concept - To be able to appropriately reuse code using inheritance
+### Key Concept - To be able to appropriately reuse code using inheritance
 
 From character class : healthpoints and energy points are created and have get and set conditions created
 ```cs
@@ -52,10 +52,10 @@ public Ranger(string Name) : base(Name)
             target.healthPoints -= 1;
         }
     }
-    ```
+ ```
 
 
-Key Concept - To be able to call a base constructor from a child constructor
+### Key Concept - To be able to call a base constructor from a child constructor
 ranger is called from charater
 
 ```cs
@@ -66,7 +66,7 @@ public class Ranger : Character
 ```
 
 
-Key Concept - To be understand access modifiers in inheritance hierarchies
+### Key Concept - To be understand access modifiers in inheritance hierarchies
 
 Use of "protected set" means its only accessable within the class and its child classes. Public makes it accessable from all classes, private keeps it contained and accessable within the class.
 
@@ -82,7 +82,7 @@ Use of "protected set" means its only accessable within the class and its child 
     }
  ```
 
-Key Concept - Demonstrate the above skills by completing the challenge exercise
+### Key Concept - Demonstrate the above skills by completing the challenge exercise
 
 ```cs
 
