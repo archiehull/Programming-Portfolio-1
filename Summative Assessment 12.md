@@ -1,6 +1,6 @@
 Key Concept - To be able to appropriately reuse code using inheritance
 
-From character class :
+From character class : healthpoints and energy points are created and have get and set conditions created
 ```cs
 
 public int healthPoints
@@ -24,7 +24,7 @@ public int healthPoints
     }
 ```
 
-these variables are reused and inherited in the child classes
+these variables are reused and inherited in the child classes, such as in ranger, where the values are modified within the child class.
 
 ```cs
 public Ranger(string Name) : base(Name)
@@ -56,6 +56,7 @@ public Ranger(string Name) : base(Name)
 
 
 Key Concept - To be able to call a base constructor from a child constructor
+ranger is called from charater
 
 ```cs
 public class Ranger : Character
