@@ -220,13 +220,13 @@ John, Susan, and Richard all took a rest!
 
 | Word | definition|
 |---|---|
-|inheritance		|
-|"is-a" relationship|		
-|parent class	|
-|derived class	|
-|protected		|
-|dependency		|
-|diamond of death|
+|inheritance		|used by classes that take information from other related classes|
+|"is-a" relationship|		used to describe what the relationship is between the child and parent classes.|
+|parent class	|the main constructor and the methods that will be used be the children|
+|derived class	|inherits from the parent class|
+|protected		|can only be accessed by that class or a child of that class|
+|dependency		|code that is required by the class for it to function|
+|diamond of death|when a class has 2 or more parents|
 
 
 	
