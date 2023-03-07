@@ -1,57 +1,89 @@
 Key Concept - To be able to appropriately reuse code using inheritance
 
+From character class :
+```cs
+
+public int healthPoints
+    {
+        get
+        { return _healthPoints; }
+        set
+        {
+            if (value < maxHealth) { _healthPoints = value; }
+            else { _healthPoints = maxHealth; }
+        }
+    }
+    public int energyPoints
+    {
+        get { return _energyPoints; }
+        protected set
+        {
+            if (value < maxEnergy) { _energyPoints = value; }
+            else { _energyPoints = maxEnergy; }
+        }
+    }
+```
+
+these variables are reused and inherited in the child classes
+
+```cs
+public Ranger(string Name) : base(Name)
+    {
+        maxHealth = 10;
+        maxEnergy = 8;
+        numberOfArrows = 10;
+        firedArrows = 0;
+    }
+
+    public void CollectArrows()
+    {
+        numberOfArrows += firedArrows;
+        firedArrows = 0;
+    }
+
+    public void FireArrows(Character target)
+    {
+        if (numberOfArrows > 0 && energyPoints >= 1 && !isKnockedOut)
+        {
+            energyPoints -= 1; 
+            numberOfArrows--;
+            firedArrows++;
+            Console.WriteLine($"{Name} the ranger shot an arrow at {target.Name}.");
+            target.healthPoints -= 1;
+        }
+    }
+    ```
+
+
 Key Concept - To be able to call a base constructor from a child constructor
 
+```cs
+public class Ranger : Character
+{
+    public Ranger(string Name) : base(Name)
+    
+```
+
+
 Key Concept - To be understand access modifiers in inheritance hierarchies
+
+Use of "protected set" means its only accessable within the class and its child classes. Public makes it accessable from all classes, private keeps it contained and accessable within the class.
+
+```cs
+    public int energyPoints
+    {
+        get { return _energyPoints; }
+        protected set
+        {
+            if (value < maxEnergy) { _energyPoints = value; }
+            else { _energyPoints = maxEnergy; }
+        }
+    }
+ ```
 
 Key Concept - Demonstrate the above skills by completing the challenge exercise
 
 ```cs
-
-Console.WriteLine("Hello, Mini Heroes Quest!");
-
-Ranger ranger = new Ranger("John");
-Barbarian barbarian = new Barbarian("Susan");
-Mage mage = new Mage("Richard");
-
-
-Console.WriteLine($"{ranger.Name} the ranger joined the party!");
-Console.WriteLine($"{barbarian.Name} the barbarian joined the party!");
-Console.WriteLine($"{mage.Name} the mage joined the party!");
-
-ranger.FireArrows(barbarian);
-barbarian.SwingAxe(mage);
-mage.ThrowFireball(ranger);
-ranger.FireArrows(mage);
-mage.Heal(barbarian);
-ranger.FireArrows(barbarian);
-ranger.FireArrows(barbarian);
-ranger.FireArrows(barbarian);
-ranger.FireArrows(barbarian);
-ranger.FireArrows(barbarian);
-ranger.FireArrows(barbarian);
-ranger.FireArrows(barbarian);
-ranger.FireArrows(barbarian);
-ranger.FireArrows(barbarian);
-ranger.FireArrows(barbarian); // The ranger has fired all arrows
-ranger.CollectArrows(); // The ranger collects all the fired arrows
-
-Console.WriteLine($"{ranger.Name} has {ranger.numberOfArrows} arrows left.");
-Console.WriteLine($"{barbarian.Name} has {barbarian.healthPoints} health points left.");
-Console.WriteLine($"{mage.Name} has {mage.energyPoints} energy points left.");
-
-ranger.Rest();
-barbarian.Rest();
-mage.Rest();
-
-Console.WriteLine($"{ranger.Name}, {barbarian.Name}, and {mage.Name} all took a rest!");
-
-Knight knight = new Knight("Niel");
-
-knight.SwingSword(mage);
-
-Console.ReadLine();
-
 
 public class Character
 {
@@ -120,7 +152,7 @@ public class Ranger : Character
     {
         if (numberOfArrows > 0 && energyPoints >= 1 && !isKnockedOut)
         {
-            energyPoints -= 1;
+            energyPoints -= 1; 
             numberOfArrows--;
             firedArrows++;
             Console.WriteLine($"{Name} the ranger shot an arrow at {target.Name}.");
@@ -202,17 +234,54 @@ public class Knight : Character
     }
 }
 
-```
+/////////////////
 
-```shell
+Console.WriteLine("Hello, Mini Heroes Quest!");
 
-John the ranger joined the party!
-Susan the barbarian joined the party!
-Richard the mage joined the party!
-John has 10 arrows left.
-Susan has 0 health points left.
-Richard has 0 energy points left.
-John, Susan, and Richard all took a rest!
+Ranger ranger = new Ranger("John");
+Barbarian barbarian = new Barbarian("Susan");
+Mage mage = new Mage("Richard");
+
+
+Console.WriteLine($"{ranger.Name} the ranger joined the party!");
+Console.WriteLine($"{barbarian.Name} the barbarian joined the party!");
+Console.WriteLine($"{mage.Name} the mage joined the party!");
+
+ranger.FireArrows(barbarian);
+barbarian.SwingAxe(mage);
+mage.ThrowFireball(ranger);
+ranger.FireArrows(mage);
+mage.Heal(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian);
+ranger.FireArrows(barbarian); // The ranger has fired all arrows
+ranger.CollectArrows(); // The ranger collects all the fired arrows
+
+Console.WriteLine($"{ranger.Name} has {ranger.numberOfArrows} arrows left.");
+Console.WriteLine($"{barbarian.Name} has {barbarian.healthPoints} health points left.");
+Console.WriteLine($"{mage.Name} has {mage.energyPoints} energy points left.");
+
+ranger.Rest();
+barbarian.Rest();
+mage.Rest();
+
+Console.WriteLine($"{ranger.Name}, {barbarian.Name}, and {mage.Name} all took a rest!");
+
+Knight knight = new Knight("Niel");
+
+knight.SwingSword(mage);
+
+Console.ReadLine();
+
+
+
 ```
 
 
