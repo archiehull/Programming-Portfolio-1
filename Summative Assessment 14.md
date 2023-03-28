@@ -1,10 +1,14 @@
 Key Concept - Be able to understand what is meant by an abstract class
-An abstract class in C# is a class that cannot be instantiated.123 It is designed to be inherited by subclasses that either implement or override its methods, which can be either partially implemented or not implemented at all.
+
+An abstract class in C# is a class that cannot be instantiated. It is designed to be inherited by subclasses that either implement or override its methods, which can be either partially implemented or not implemented at all.
 
 Key Concept - Be able to describe the advantages of using an interface (from lecture content)
+
 An interface declares a contract. Implementing an interface enforces your class to be bound to the contract (by providing the appropriate members). Consequently, everything that relies on that contract (a method that relies on the functionality specified by the interface to be provided by your object) can work with your object too.
 
-It improves readability, semantics and maintainability 
+It improves readability, semantics and maintainability.
+Useful in multiple inheritance
+
 
 
 Key Concept - Be able to create a concrete implementation of an abstract class
@@ -872,13 +876,13 @@ new ShapeManagerMenu(manager).Select();
 
 | Word | definition|
 |---|---| 
-|abstract class|		
-|abstract method|		
-|concrete class|		
-|sealed class		|
-|sealed method	|	
-|interface		|
-|observer pattern|
+|abstract class| can only operate when inherited, cannot be instantiated	|	
+|abstract method| a method inherited and overwritten from an abstract class and can only be called from the child class|	
+|concrete class|	allows creating an instance or an object using the new keyword	|
+|sealed class		|cannot be inherited by any class but can be instantiated|
+|sealed method	|	cant be overwritten|
+|interface		|a code structure that defines a contract between an object and its user, used to define members and methods|
+|observer pattern| allows objects to notify each other of changes in their state|
 
 
 	
